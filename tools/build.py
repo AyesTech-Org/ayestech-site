@@ -871,6 +871,9 @@ def page_privacy() -> str:
         ("Advertising (free tier only)", """<p>The free tier shows occasional full-screen ads served by Google AdMob, which may access your device advertising identifier (IDFA) and general device information for ad measurement and personalisation.</p>
 <p>If you decline the iOS App Tracking Transparency prompt, your advertising identifier is not used. You can change this any time in Settings › Privacy &amp; Security › Tracking. Any paid subscription removes ads entirely.</p>
 <p>AdMob privacy practices: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></p>"""),
+        ("Usage analytics", """<p>To understand which features are used and where the app can be improved, the app sends anonymous usage events to Google Analytics for Firebase — for example which onboarding step was reached, how a document was added (file, scan, paste or web link), the document format and language, whether an optional rewarded ad was completed, and listening time in 5-minute steps.</p>
+<p>These events never contain the content, titles or file names of your documents, your name or your e-mail address. Firebase uses an app-instance identifier and general device information (model, OS version, country, language). In the EEA, the UK and Switzerland analytics runs only after you agree in the consent form, and it follows your choice (Google Consent Mode); you can change it any time in Settings › Ad Privacy Options.</p>
+<p>Google privacy practices: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> · Firebase: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>"""),
         ("Purchases", "<p>Subscriptions and top-ups are processed by Apple through the App Store. We never see, receive or store your payment details — we only learn whether your subscription is currently valid.</p>"),
         ("Camera and photos", "<p>The camera opens only when you use the “Scan” feature, solely to turn a page into text. The captured image is processed on your device and stays there.</p>"),
         ("Children", "<p>The app is not directed at children under 13 and does not knowingly collect data from them.</p>"),
@@ -880,10 +883,10 @@ def page_privacy() -> str:
     return legal_page(
         path="/pdf-reader/privacy/", eyebrow="Privacy policy", title="Privacy Policy",
         tagline="How ListenFly handles your data, explained plainly.",
-        meta="Effective: 21 August 2026 · Last updated: 21 August 2026",
-        summary="<strong>In short:</strong> ListenFly has no accounts, never uploads your books to our servers, and does not track your reading. Your library, progress and settings stay on your device. Only with Premium HD cloud voices is the text being spoken at that moment sent to our server to generate audio; on Standard and Premium, a scanned page can be sent for cloud text recognition if you choose that option.",
+        meta="Effective: 21 August 2026 · Last updated: 26 November 2026",
+        summary="<strong>In short:</strong> ListenFly has no accounts, never uploads your books to our servers, and never sends the content or titles of your documents for analytics. Your library, progress and settings stay on your device. Only with Premium HD cloud voices is the text being spoken at that moment sent to our server to generate audio; on Standard and Premium, a scanned page can be sent for cloud text recognition if you choose that option.",
         sections=sections,
-        description="ListenFly privacy policy: no accounts, documents stay on your device, what is sent for cloud narration and text recognition, advertising on the free tier, purchases, your rights.")
+        description="ListenFly privacy policy: no accounts, documents stay on your device, what is sent for cloud narration and text recognition, advertising on the free tier, usage analytics, purchases, your rights.")
 
 
 def page_terms() -> str:
